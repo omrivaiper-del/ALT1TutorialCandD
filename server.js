@@ -70,4 +70,3 @@ db.run("insert into movies(title, genre, picture) values ('Happy Friday', 'Comed
 app.get('/getResult', function(request, response) {
   response.send("Horror");
 });
-<p id="result">You like Horror</p>
