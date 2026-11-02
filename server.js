@@ -61,12 +61,12 @@ response.send(JSON.stringify(rows));
 // create tables moves movie table to answer table
 db.run("CREATE TABLE IF NOT EXISTS movies (id INTEGER PRIMARY KEY, title TEXT, genre TEXT, picture TEXT)");
 db.run("CREATE TABLE IF NOT EXISTS answers (id INTEGER PRIMARY KEY AUTOINCREMENT, movie_id INTEGER, choice TEXT)");
-db.run("insert into movies(title, genre, picture) values ('Night Cabin', 'Horror', '/night-cabin.png')");
-db.run("insert into movies(title, genre, picture) values ('Ghost Hall', 'Horror', '/ghost-hall.png')");
-db.run("insert into movies(title, genre, picture) values ('Dark Woods', 'Horror', '/dark-woods.png')");
-db.run("insert into movies(title, genre, picture) values ('Funny Friends', 'Comedy', '/funny-friends.png')");
-db.run("insert into movies(title, genre, picture) values ('Pizza Party', 'Comedy', '/pizza-party.png')");
-db.run("insert into movies(title, genre, picture) values ('Silly Dogs', 'Comedy', '/silly-dogs.png')");
+db.run("insert into movies(title, genre, picture) values ('Halloween', 'Horror', '/Halloween.png')");
+db.run("insert into movies(title, genre, picture) values ('Anabel', 'Horror', '/Anabel.png')");
+db.run("insert into movies(title, genre, picture) values ('the descent', 'Horror', '/the descent.png')");
+db.run("insert into movies(title, genre, picture) values ('Friends', 'Comedy', '/Friends.png')");
+db.run("insert into movies(title, genre, picture) values ('The boys', 'Comedy', '/The-boys.png')");
+db.run("insert into movies(title, genre, picture) values ('Happy Friday', 'Comedy', '/Happy-Friday.png')");
 app.get('/getResult', function(request, response) {
   response.send("Horror");
 });
